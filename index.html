@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./assets/images/s-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/helper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0165863800.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css">
+</head>
+
+<body class="img">
+
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="index.html">
+                        <img style="width:25%" src="./assets/images/logo-1.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="col-md-6 text-right">
+                    <button type="button" class="btn btn-outline-warning font-weight-bold" id="showMoviesForm">Add
+                        Movie</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="movieTemp">
+        <div class="container">
+            <div class="row" id="moviesContainer">
+                 
+            </div>
+        </div>
+    </main>
+
+    <div class="dropDownForm" id="dropDownForm">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1464820453369-31d2c0b651af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zmxvd2VyJTIwZGVzaWdufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                style="width:100px" alt="img">
+            <div class="card-header">
+                <h2 class="text-info font-weight-bold">Add Movies Details <i
+                        class="fas fa-times  float-right hideForm"></i></h2>
+            </div>
+            <div class="card-body">
+                <form id="moviesDrop">
+                    <div class="form-group">
+                        <label for="title" class="font-weight-bold">Title</label>
+                        <input type="text" required placeholder="Title" class="form-control" id="title">
+                    </div>
+                    <div class="form-group">
+                        <label for="imgUrl" class="font-weight-bold">Img URL</label>
+                        <input type="text" required placeholder="Img Url" class="form-control" id="imgUrl">
+                    </div>
+                    <div class="form-group">
+                        <label for="rating" class="font-weight-bold">Rating</label>
+                        <input type="number" required placeholder="Rating" class="form-control" id="rating">
+                    </div>
+                    <div class="text-right">
+                        <button type="button" id="updateMovieBtn"
+                            class="btn btn-primary mb-10 d-none font-weight-bold">Update Movie</button>
+                        <button type="submit" id="addMovieBtn" class="btn btn-primary mb-10 font-weight-bold">Add
+                            Movie</button>
+                        <button type="button" id="cancelBtn" class="btn btn-danger hideForm font-weight-bold">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="backgroundOverly hideForm" id="backgroundOverly"></div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
+
+
+
+ 

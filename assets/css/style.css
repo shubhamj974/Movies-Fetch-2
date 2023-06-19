@@ -1,0 +1,155 @@
+.img {
+    height: 100vh;
+    background-image: url('../images/bg-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.header {
+    background-color: #363131;
+}
+
+.header button.btn.btn-outline-warning {
+    margin: 3rem 0;
+}
+
+.dropDownForm {
+    position: fixed;
+    top: 25vh;
+    left: 25%;
+    width: 50%;
+    z-index: 1;
+    display: none;
+    animation: form-collapse 0.5s ease-in-out;
+}
+
+
+.backgroundOverly {
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.dropDownForm.visible {
+    display: block;
+}
+
+
+.backgroundOverly.visible {
+    display: block;
+}
+
+.movieTemp img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    padding: 0;
+}
+
+.header img {
+    padding: 1rem 0;
+}
+
+i.fas.fa-times.float-right.hideForm {
+    cursor: pointer;
+}
+
+@keyframes form-collapse {
+    from {
+        margin-top: -10%;
+        opacity: 0;
+    }
+
+    to {
+        margin-top: 0%;
+        opacity: 1;
+    }
+
+}
+
+@media all and (min-width:992px) and (max-width:1196px) {
+    .header button.btn.btn-outline-warning {
+        margin: 2rem 0;
+    }
+
+    .dropDownForm {
+        position: fixed;
+        top: 17vh;
+        left: 10%;
+        width: 80%;
+    }
+
+}
+
+@media all and (min-width:767px) and (max-width:992px) {
+    .col-md-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .header button.btn.btn-outline-warning {
+        margin: 1rem 0;
+    }
+
+
+
+}
+
+@media all and (max-width : 767px) {
+
+    button.btn.btn-primary.font-weight-bold,
+    button.btn.btn-danger.font-weight-bold {
+        width: 100%;
+    }
+
+    .mb-10 {
+        margin-bottom: 0.5rem;
+    }
+
+    .header .text-right {
+        text-align: left !important;
+    }
+
+    .header button.btn.btn-outline-warning {
+        margin: 1rem 0;
+
+    }
+
+    .header img {
+        padding: 1rem 0;
+    }
+
+    .dropDownForm {
+        position: fixed;
+        top: 10vh;
+        left: 10%;
+        width: 80%;
+    }
+
+    .mb-20 {
+        margin-bottom: 0rem;
+    }
+}
+
+
+.card-footer p,
+.card-footer button {
+    display: inline-block;
+}
+
+.card-footer {
+    display: flex;
+}
+
+.card-footer p {
+    flex: 1;
+    margin-bottom: 0;
+    line-height: 38px;
+}
